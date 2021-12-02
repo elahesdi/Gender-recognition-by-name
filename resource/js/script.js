@@ -105,7 +105,6 @@ document.querySelector('.save').addEventListener('click' , function(e){
     let myStorage = window.localStorage;
     const name = document.querySelector('.name').value;
     const radioValue = valueOfRadio();
-    console.log(/^[A-Za-z]+$/i.test(name));
     if(name){
         if(radioValue){
             if (!myStorage.getItem(name))
@@ -114,6 +113,7 @@ document.querySelector('.save').addEventListener('click' , function(e){
                 myStorage.removeItem(name ,radioValue);
                 myStorage.setItem(name , radioValue);
             }
+            getRequest(name);
         }
         else{
             notify(emptyGender);
