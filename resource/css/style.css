@@ -104,6 +104,7 @@ remove the focus of name input
 /*
 design three button in web page 
 set padding . margin , border , letter spacing and ...
+and make a ransition
 */
 .submit,
 .clear,
@@ -116,7 +117,26 @@ set padding . margin , border , letter spacing and ...
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 100;
+    transition: background-color 0.4s , color 0.4s;
 
+}
+/*
+change background color of save button when it is active or hover
+*/
+.save:hover,
+.save:active{
+    color: #fff;
+    background-color: #006600 ;
+
+}
+/*
+change background color of submit and clear button when it is active or hover
+*/
+.submit:hover,
+.submit:active,
+.clear:hover,
+.clear:active{
+    background-color: #004600 ;
 }
 
 /*
