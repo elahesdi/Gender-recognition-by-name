@@ -1,0 +1,204 @@
+
+/*
+set margin and padding of all elements to 0
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+set the color and font of whole page
+overflow of content will hidden
+*/
+html,
+body {
+    
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+   
+}
+
+/*
+set blocks in a row by  margin: 0 auto ;
+*/
+.row {
+    
+    margin: 0 auto ;
+    max-width: 1140px;
+}
+/*
+set the font size-weight , word-letter spacing and margin for h2 element  
+*/
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight:300;
+    
+}
+/*
+set backgroundimage , make it darker and cover whole web page
+*/
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/headerbackground.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+}
+/*
+set the position of main box in center and create a border for it 
+*/
+.content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #555;
+    border-radius: 20px;  
+    background-color: #ffffff;
+}
+
+/*
+this class determine the width and border of name input
+*/
+input[type=text]{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/*
+set margin for radio input
+*/
+.radio-part{
+    margin: 15px 0 ;
+}
+
+/*
+set padding left for form box
+*/
+.form {
+      padding-left: 20px;
+}
+
+/*
+set padding for name label
+*/
+.form label {
+    margin-right: 16px;
+}
+
+/*
+remove the focus of name input
+*/
+*:focus {outline: none;}
+
+/*
+design three button in web page 
+set padding . margin , border , letter spacing and ...
+*/
+.submit,
+.clear,
+.save {
+    padding: 10px 20px;
+    border: 1px solid #006600;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 100px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+
+/*
+set the color and background color of submit and clear button
+*/
+.submit,
+.clear {
+    color: #fff;
+    background-color: #006600 ;
+ 
+}
+
+/*
+set the color and background color of save button
+*/
+.save {
+
+    margin-left: 20px;
+    color: #006600 ;
+    background-color: #fff ;
+}
+
+/*
+set margin for gender and probability in prediction and gender in save message
+*/
+p{
+    margin-bottom: 20px;
+}
+
+/*
+set  border and some padding and margin bottom for saved answer box
+it's width will be 90 percent of a column
+*/
+.saved-answer{
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*
+set  border and some padding for prediction box
+it's width will be 90 percent of a column
+*/
+.prediction{
+    border: 1px solid #fff;
+    width: 90%;
+    padding: 10px;
+}
+
+/*
+set padding for form box
+*/
+.form-box{
+    padding: 15px;
+}
+
+/*
+this class will set the position and background color and color and padding of the alter div
+*/
+.notify{
+    width: 100%;
+    position: absolute;
+    font-size: 22px;
+    background-color: rgb(61, 60, 60);
+    top: 90%;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+/*
+set the position of notify close button
+*/
+.close {
+    position: absolute;
+    top: 0;
+    right: 1%;
+}
+
+/*
+this class will close the notify 
+*/
+.hidden {
+    display: none;
+}

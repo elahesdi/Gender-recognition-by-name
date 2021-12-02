@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>midterm exam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="resource/css/style.css"  rel="stylesheet" type="text/css">
+        <link href="vendors/css/7.1%20Grid.css"  rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="content-box">
+                <div class="col span-1-of-2">
+                    <div class="form-box">
+                        <h2>Ms. or Mr. ?</h2>
+                        <form method="get" action="#" class="form">
+                            <div class="row">
+                                <div class="col span 1-of-3">
+                                    <label >Name</label>
+                                </div>
+                                 <div class="col span 2-of-3">
+                                    <input type="text" class="name"  required>
+                                </div>
+                            </div>
+                            <div class="row radio-part">
+
+                                <input type="radio" name="gender" id="male" value="male"> 
+                                <label for="male">male</label>
+                            </div>
+                            <div class="row radio-part">
+
+                                <input type="radio" name="gender" id="female" value="female"> 
+                                <label for="female">female</label>
+                            </div>
+                            <button class="submit">submit</button> 
+                            <button class="save">save</button> 
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-2 ">
+                    <div class="prediction">
+                        <h2>prediction</h2>
+                        <p ><span class="pre-gender">gender</span></p>
+                        <p ><span class="pre-probability">probability</span></p>
+                    </div>
+                     <div class="saved-answer">
+                        <h2>saved answer</h2>
+                        <p>gender: <span class="save-gender"></span></p>
+                        <button class="clear">clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="notify hidden"> <div class="close">&times;</div><div class="notify-text"></div>  </div>
+        </header>
+        <script src="resource/js/script.js"></script>
+    </body>
+    
+
+</html>
